@@ -1,0 +1,11 @@
+{
+  "name": "advent",
+  "version": "1.0.0",
+  "description": "2020 Advent of Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Renjie Zhou",
+  "license": "ISC"
+}

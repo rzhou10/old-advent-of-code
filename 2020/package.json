@@ -4,8 +4,12 @@
   "description": "2020 Advent of Code",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "days": "node index.js",
+    "test": "jest"
   },
   "author": "Renjie Zhou",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }

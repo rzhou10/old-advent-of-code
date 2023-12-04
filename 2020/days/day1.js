@@ -1,34 +1,24 @@
 const find2020ExpensesPt1 = (expenseReport) => {
-  let result = 0;
-  for (let i in expenseReport) {
-    for (let j in expenseReport) {
-      if (Number(expenseReport[i]) + Number(expenseReport[j]) === 2020) {
-        result = Number(expenseReport[i]) * Number(expenseReport[j]);
-        break;
+  for (let firstNum of expenseReport) {
+    for (let secondNum of expenseReport) {
+      if (Number(firstNum) + Number(secondNum) === 2020) {
+        return Number(firstNum) * Number(secondNum);
       }
     }
   }
-
-  return result;
 }
 
-// this doesn't work, I'm going to find a better way to write this function considering it's 3 nested loops
-// over a huge data set
+// I'm honestly not sure why this doesn't work considering 
 const find2020ExpensesPt2 = (expenseReport) => {
-  let result = 0;
-
-  for (let i in expenseReport) {
-    for (let j in expenseReport) {
-      for (let k in expenseReport) {
-        if ((Number(expenseReport[i]) + Number(expenseReport[j]) + Number(expenseReport[k])) === 2020) {
-          result = Number(expenseReport[i]) * Number(expenseReport[j]) * Number(expenseReport[k]);
-          break;
+  for (let i = 0; i < expenseReport.length - 1; i += 1) {
+    for (let j = i + 1; j < expenseReport.length; j += 1) {
+      for (let k = i + 1; k < expenseReport.length; k += 1) {
+        if (expenseReport[i] + expenseReport[j] + expenseReport[k] == 2020) {
+          return expenseReport[i] * expenseReport[j] * expenseReport[k];
         }
       }
     }
   }
-
-  return result;
 }
 
 module.exports = {

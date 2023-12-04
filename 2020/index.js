@@ -1,4 +1,4 @@
-const day1 = require("../2020/days/day1.js")
+const day1 = require("../2020/days/day1.js");
 const fs = require('fs');
 
 fs.readFile('inputs/day1pt1.txt', 'utf8', (err, data) => {

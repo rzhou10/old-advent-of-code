@@ -8,13 +8,12 @@ const find2020ExpensesPt1 = (expenseReport) => {
   }
 }
 
-// I'm honestly not sure why this doesn't work considering 
 const find2020ExpensesPt2 = (expenseReport) => {
-  for (let i = 0; i < expenseReport.length - 1; i += 1) {
-    for (let j = i + 1; j < expenseReport.length; j += 1) {
-      for (let k = i + 1; k < expenseReport.length; k += 1) {
-        if (expenseReport[i] + expenseReport[j] + expenseReport[k] == 2020) {
-          return expenseReport[i] * expenseReport[j] * expenseReport[k];
+  for (let i = 0; i < expenseReport.length - 2; i += 1) {
+    for (let j = i + 1; j < expenseReport.length - 1; j += 1) {
+      for (let k = j + 1; k < expenseReport.length; k += 1) {
+        if (Number(expenseReport[i]) + Number(expenseReport[j]) + Number(expenseReport[k]) == 2020) {
+          return Number(expenseReport[i]) * Number(expenseReport[j]) * Number(expenseReport[k]);
         }
       }
     }

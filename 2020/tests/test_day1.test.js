@@ -1,9 +1,8 @@
 const day1 = require('../days/day1');
 const fs = require('fs');
 
-// TODO: Fix unexpected token somwwhere
 test('day 1 validation', () => {
-  fs.readFile('inputs/day1pt1.txt', 'utf8', (err, data) => {
+  fs.readFile('inputs/day1/day1pt1.txt', 'utf8', (err, data) => {
     if (err) {
       console.error(err);
       return;
@@ -17,7 +16,7 @@ test('day 1 validation', () => {
 });
 
 test('day 1 validation (example)', () => {
-  fs.readFile('inputs/day1part1Ex.txt', 'utf8', (err, data) => {
+  fs.readFile('inputs/day1/day1part1Ex.txt', 'utf8', (err, data) => {
     if (err) {
       console.error(err);
       return;

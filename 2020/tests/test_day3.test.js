@@ -11,7 +11,7 @@ test('day 3 validation', () => {
     const day2Data = data.split("\n");
 
     expect(day3.partOne(day2Data)).toBe(270);
-    expect(day3.partTwo(day2Data)).toBe(245);
+    expect(day3.partTwo(day2Data)).toBe(2122848000);
   });
 });
 

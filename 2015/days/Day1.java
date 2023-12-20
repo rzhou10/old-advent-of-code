@@ -2,7 +2,7 @@ import java.io.*;
 
 class Day1 {
     public static void main(String[] args) throws Exception {
-        File input = new File("../inputs/day1.txt");
+        File input = new File("../inputs/day1/day1.txt");
 
         BufferedReader reader = new BufferedReader(new FileReader(input));
         System.out.println(partOne(reader.readLine()));
